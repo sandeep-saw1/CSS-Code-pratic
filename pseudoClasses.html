@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Transform</title>
+    <style>
+        .box {
+            margin: 5px;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            transition: all 2s 0s ease-in-out;
+            background-color: rgb(174, 0, 255);
+            border-radius: 5px;
+            border: 2px solid black;
+            display: inline-block;
+            justify-content: space-around;
+            position: absolute; /* Use absolute or relative positioning */
+            left: 50px; /* Initial position */
+            animation: kyahua 5s linear 1s infinite alternate;
+          
+        }
+
+        @keyframes kyahua {
+            0% { left: 50px; }
+            50% { left: 90px; }  
+            90%{ left: 150px;}
+            100%{ left: 200px;} 
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">45deg</div>
+</body>
+</html>
+
